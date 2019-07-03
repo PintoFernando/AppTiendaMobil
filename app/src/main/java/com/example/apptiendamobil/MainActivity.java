@@ -10,5 +10,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //hola es una pruebaxdxdxd
+
+    }
+
+    @Override
+    public void onProvideAssistData(Bundle data) {
+        super.onProvideAssistData(data);
     }
 }
