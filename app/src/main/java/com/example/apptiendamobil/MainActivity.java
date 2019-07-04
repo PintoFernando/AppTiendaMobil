@@ -1,8 +1,11 @@
 package com.example.apptiendamobil;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
         //texto1 = (TextView) findViewById(R.id.txt2);
         //texto1.setTypeface(kaibon);
 
+        Button siguiente;
+
+        siguiente = (Button)findViewById(R.id.btn1);
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent siguiente = new Intent(MainActivity.this,login.class);
+                startActivity(siguiente);
+            }
+        });
 
     }
 
