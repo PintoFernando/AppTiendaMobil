@@ -1,12 +1,9 @@
 const mongoose = require("./connect");
-const COMPRADORSCHEMA = {
-  username     : String,
-  name         : String,
+const USERSCHEMA = {
+  username     : {type: String, unique: true},
+  password     : {type: String},
   email        : String,
-  password     : String,
   registerDate : Date,
-  sex          : String,
-  age          : Number
 }
-const COMPRADORES = mongoose.model("users", COMPRADORSCHEMA);
-module.exports = COMPRADORES;
+const USERS = mongoose.model("Users", USERSCHEMA);
+module.exports = USERS;
