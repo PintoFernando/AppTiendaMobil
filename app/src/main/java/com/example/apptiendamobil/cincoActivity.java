@@ -7,22 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class cincoActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.pag5);
 
 
 
     }
-    public void pagina5(View view){
-        Intent cinco = new Intent( this,cincoActivity.class);
-        startActivity(cinco);
-
-   }
 
 
 
