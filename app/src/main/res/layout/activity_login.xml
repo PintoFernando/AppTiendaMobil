@@ -142,7 +142,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/registrate"
         android:layout_width="136dp"
         android:layout_height="27dp"
         android:layout_marginTop="20dp"
