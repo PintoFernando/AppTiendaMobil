@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.security.Principal;
+
 public class login extends AppCompatActivity {
 
 
@@ -20,19 +22,19 @@ public class login extends AppCompatActivity {
         otro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent otro = new Intent(login.this,Principal.class);
+                Intent otro = new Intent(login.this, Principal.class);
                 startActivity(otro);
             }
         });
-
-        Ir_Registro = (TextView) findViewById(R.id.registrate);
-        Ir_Registro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent Ir_Registro = new Intent(login.this,Principal.class);
-                startActivity(Ir_Registro);
+        //
+        //Ir_Registro = (TextView) findViewById(R.id.registrate);
+        //Ir_Registro.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View view) {
+          //      Intent Ir_Registro = new Intent(login.this,Principal.class);
+             //   startActivity(Ir_Registro);
             }
-        });
+      //  });
 
-    }
+    //}
 }

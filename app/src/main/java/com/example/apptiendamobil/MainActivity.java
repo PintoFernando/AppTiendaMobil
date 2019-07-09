@@ -20,24 +20,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        /*Button siguiente;
 
-        siguiente = (Button)findViewById(R.id.btn2);
-        siguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent siguiente = new Intent(MainActivity.this,login.class);
-                startActivity(siguiente);
-            }
-        });*/
 
     }
-    public void pagina5(View view){
-        Intent cinco = new Intent( this,cincoActivity.class);
-        startActivity(cinco);
-
-   }
-
 
 
 }
