@@ -16,8 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.ListView;
 
-import com.example.apptiendamobil.collection.ListAdapter;
-import com.example.apptiendamobil.collection.item;
+//import com.example.apptiendamobil.collection.ListAdapter;
+//import com.example.apptiendamobil.collection.item;
 
 import java.util.ArrayList;
 
@@ -45,7 +45,7 @@ public class Principal extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-        loadcomponents();
+        //loadcomponents();
     }
 
     @Override
@@ -104,7 +104,7 @@ public class Principal extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-    private void loadcomponents() {
+    /*private void loadcomponents() {
         ListView list = (ListView) this .findViewById(R.id.listamain);
         ArrayList<item> list_data = new ArrayList<item>();
         for ( int i = 0 ; i < 100 ; i++ ) {
@@ -117,5 +117,5 @@ public class Principal extends AppCompatActivity
         }
         ListAdapter adapter = new ListAdapter( this , list_data);
         list.setAdapter(adapter);
-    }
+    }*/
 }
