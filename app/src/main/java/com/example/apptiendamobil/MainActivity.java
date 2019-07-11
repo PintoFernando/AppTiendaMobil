@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(R.layout.inicio2);
 
         Retrofit retrofit = retroFitClient.getInstance();
@@ -89,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                                 MaterialEditText edt_register_email = (MaterialEditText)register_layout.findViewById(R.id.edt_email);
                                 MaterialEditText edt_register_user = (MaterialEditText)register_layout.findViewById(R.id.edt_username);
                                 MaterialEditText edt_register_password = (MaterialEditText)register_layout.findViewById(R.id.edt_password);
+=======
+        setContentView(R.layout.activity_main);
+>>>>>>> acfb202918acb407bf850dae63e4c7b764113bab
 
                                 if(TextUtils.isEmpty(edt_register_email.getText().toString())){
                                     Toast.makeText(MainActivity.this, "El usuario no puede ser nulo o vacio",Toast.LENGTH_SHORT).show();
@@ -111,16 +115,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*Button siguiente;
 
-        siguiente = (Button)findViewById(R.id.btn2);
-        siguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent siguiente = new Intent(MainActivity.this,login.class);
-                startActivity(siguiente);
-            }
-        });*/
 
 
     }
@@ -159,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
     }
+<<<<<<< HEAD
 
     public void pagina5(View view){
         //Intent cinco = new Intent( this,cinrcoActivity.class);
@@ -166,6 +162,8 @@ public class MainActivity extends AppCompatActivity {
 
    }
 
+=======
+>>>>>>> acfb202918acb407bf850dae63e4c7b764113bab
 
 
 }
