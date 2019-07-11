@@ -1,9 +1,12 @@
 const mongoose = require("./connect");
 const USERSCHEMA = {
-  username     : {type: String, unique: true},
-  password     : {type: String},
+  name         : String,
+  apellidop    : String,
+  apellidom    : String,
+  username     : String,
+  password     : String,
   email        : String,
   registerDate : Date,
 }
 const USERS = mongoose.model("Users", USERSCHEMA);
-module.exports = USERS;
+module.exports = {model: USERS, schema: USERSCHEMA};
